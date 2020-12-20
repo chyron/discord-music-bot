@@ -15,7 +15,7 @@ jobs:
       - name: Build project
         run: cargo build --release --locked
       - name: Archive build
-        uses: actions/upload-artifacts@v2
+        uses: actions/upload-artifact@v2
         with:
           name: discord-bot
           path: target/release/discord-bot
